@@ -23,15 +23,20 @@
 }
 
 #old{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     min-width: 430px;
     min-height: 20px;
-    background-color: rgba(108, 105, 105, 0.722);
+    background-color: rgba(108, 105, 105, 0.579);
 }
 
 #latest{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     min-width: 430px;
     min-height: 80px;
-    background-color: rgb(255, 208, 151);
+    background-color: rgba(255, 236, 212, 0.57);
+    text-align: end;
+    padding-top:20px;
+    font-size: 40px;
 }
 
 
@@ -42,7 +47,10 @@
     align-items: center;
     gap: 20px;
 }
- 
+
+#nums{
+    background-color: azure;
+}
  
 .numb-column{ 
     display: flex; 
@@ -63,11 +71,10 @@
 }
 .num-keys:hover{
     cursor: pointer;
+    color:rgba(240, 255, 255, 0.7);
 }
 
-#signs{
-    
-}
+
 .symbols{
     font-size: 60px;
     /* min-width: 100px; */
@@ -82,7 +89,9 @@
 
 .symbols:hover{
     cursor: pointer;
+    color:rgba(240, 255, 255, 0.7);
 }
+
 
 
 
