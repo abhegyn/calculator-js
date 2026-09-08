@@ -75,7 +75,7 @@
 }
 
 
-.symbols{
+.symbols,.equate{
     font-size: 60px;
     /* min-width: 100px; */
     min-height: 70px;
@@ -87,7 +87,7 @@
     flex: 2;
 }
 
-.symbols:hover{
+.symbols:hover,.equate:hover{
     cursor: pointer;
     color:rgba(240, 255, 255, 0.7);
 }
