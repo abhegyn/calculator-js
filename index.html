@@ -4,18 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href = "calc.ico" >
-    <link rel="stylesheets" href="main.css" >
+    <link rel="stylesheet" href="main.css" >
     <title>Calculator</title>
     <script defer src="app.js" ></script>
 </head>
 <body>
     <div id="calc">
+
         <div id="components" >
-            <div id="screen" ></div>
+
+            <div id="screen">
+
+                <div id="old"> </div>
+                <div id="latest"> </div>
+                
+            </div>
 
             <div id="inputs" >
-                <div id="nums"></div>
-                <div id="signs"></div>
+                <div id="nums">
+                    <div class="numb-column" >
+                        <div class="num-keys">1️⃣</div>
+                        <div class="num-keys">2️⃣</div>
+                        <div class="num-keys">3️⃣</div>
+                    </div >
+                    <div class="numb-column">
+                        <div class="num-keys">4️⃣</div>
+                        <div class="num-keys">5️⃣</div>
+                        <div class="num-keys">6️⃣</div>
+                    </div>
+                    <div class="numb-column">
+                        <div class="num-keys">7️⃣</div>
+                        <div class="num-keys">8️⃣</div>
+                        <div class="num-keys">9️⃣</div>
+                    </div>
+                    <div class="num-keys">
+                        0️⃣
+                    </div>
+                </div>
+
+                <div id="signs">
+                    <div class="symbols"> ➕ </div>
+                    <div class="symbols"> ➖ </div>
+                    <div class="symbols"> ✖️ </div>
+                    <div class="symbols"> ➗ </div>
+                    <div class="symbols"> 🟰 </div>
+                </div>
+
             </div>
         </div>
     </div>
