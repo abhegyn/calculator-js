@@ -17,6 +17,11 @@ const resetState = (()=>{
   finalContent = 0;
 });
 
+const clearrr = document.querySelector("#clear");
+clearrr.addEventListener("click", ()=>{
+  textContentLeft = textContentRight = "";
+  finalContent = 0;
+})
 
 const addd = document.querySelector("#plus");
 
@@ -108,7 +113,7 @@ const operate = ((someLeft, someRight, op)=>{
       break;
     };
     default:{
-      console.log("how did we get here?");
+      console.log("error in operate func?");
     };
     
 
@@ -121,6 +126,7 @@ const rightZero = ((textContentRight)=>{
    else return true;  
 })
 
+// replace below using a loop?
 const onebtn = document.querySelector("#one");
 onebtn.addEventListener("click", ()=>{
   if(flag){

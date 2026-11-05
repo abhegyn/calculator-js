@@ -78,7 +78,7 @@
 .symbols,.equate{
     font-size: 60px;
     /* min-width: 100px; */
-    min-height: 70px;
+    max-height: 65px;
     border-radius: 20%;
     display: flex;
     justify-content: center;
