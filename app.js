@@ -1,8 +1,10 @@
 let textContentLeft = "" , textContentRight= "";
 
 let finalContent;
+// display screen
+const screen = document.querySelector("#latest");
 
-const screen = document.querySelector("#screen");
+// screen.setAttribute("style", "min-width: 20px; background: yellow;");
 
 //flag to check if an operator has been entered or not
 let flag = false;
