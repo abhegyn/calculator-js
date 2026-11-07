@@ -12,9 +12,9 @@ let flag = false;
 let op = "";
 
 
-function displayAfterButton(){
-  // this function has to display
-}
+// function displayAfterButton(){
+//   // this function has to display
+// }
 
 
 const resetState = (()=>{
@@ -126,8 +126,6 @@ const operate = ((someLeft, someRight, op)=>{
     default:{
       console.log("error in operate func?");
     };
-    
-
   }
 
 });
