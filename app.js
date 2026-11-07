@@ -218,6 +218,8 @@ zerobtn.addEventListener("click", ()=>{
     textContentLeft += '0';
   } else if (flag == true && rightZero()==false ) {
     alert("dont do that 😡");
+    resetState();
+    screen.textContent=0;
     
   }
 
