@@ -8,8 +8,9 @@ const screen = document.querySelector("#latest");
 // flag to check if an operator has been entered or not
 // flag needs to be false again after equate has been used
 let flag = false;
-let count = 0;
+
 let op = "";
+
 
 function displayAfterButton(){
   // this function has to display
@@ -32,32 +33,31 @@ clearrr.addEventListener("click", ()=>{
 const addd = document.querySelector("#plus");
 
 addd.addEventListener("click", ()=>{
+  if (flag!=false) {
+    operate(textContentLeft, textContentRight,op);
+    flag = false;
+    textContentLeft = `${finalContent}`;
+    screen.textContent = textContentLeft;
+    textContentRight = "";
+  }
   op = "+";
   flag = true;
-  count++;
-  // if (count>1) {
-  //   alert("Enter a Number after an operator")
-  //   textContentLeft = textContentRight = "";
-  // }else{ 
-  //   console.log(count) ;
-  // }
   screen.textContent = textContentLeft;
-  console.log("flag is true");
 });
 
 
 const minuss = document.querySelector("#minus");
 
 minuss.addEventListener("click", ()=>{
+  if (flag!=false) {
+    operate(textContentLeft, textContentRight,op);
+    flag = false;
+    textContentLeft = `${finalContent}`;
+    screen.textContent = textContentLeft;
+    textContentRight = "";
+  }
   op="-";
   flag = true;
-  count++;
-  // if (count>1) {
-  //   alert("Enter a Number after an operator")
-  //   textContentLeft = textContentRight = "";
-  // }else{ 
-  //   console.log(count) ;
-  // }
   screen.textContent = textContentLeft;
   console.log("flag is true");
 });
@@ -66,15 +66,15 @@ minuss.addEventListener("click", ()=>{
 const multiplyy = document.querySelector("#multiply");
 
 multiplyy.addEventListener("click", ()=>{
+  if (flag!=false) {
+    operate(textContentLeft, textContentRight,op);
+    flag = false;
+    textContentLeft = `${finalContent}`;
+    screen.textContent = textContentLeft;
+    textContentRight = "";
+  }
   op="x";
   flag = true;
-  count++;
-  // if (count>1) {
-  //   alert("Enter a Number after an operator")
-  //   textContentLeft = textContentRight = "";
-  // }else{ 
-  //   console.log(count) ;
-  // }
   screen.textContent = textContentLeft;
   console.log("flag is true");
 });
@@ -82,15 +82,15 @@ multiplyy.addEventListener("click", ()=>{
 const dividee = document.querySelector("#divide");
 
 dividee.addEventListener("click", ()=>{
+  if (flag!=false) {
+    operate(textContentLeft, textContentRight,op);
+    flag = false;
+    textContentLeft = `${finalContent}`;
+    screen.textContent = textContentLeft;
+    textContentRight = "";
+  }
   op="/";
   flag = true;
-  count++;
-  // if (count>1) {
-  //   alert("Enter a Number after an operator")
-  //   textContentLeft = textContentRight = "";
-  // }else{ 
-  //   console.log(count) ;
-  // }
   screen.textContent = textContentLeft;
   console.log("flag is true");
 });
