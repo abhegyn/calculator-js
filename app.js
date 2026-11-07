@@ -1,15 +1,19 @@
 let textContentLeft = "" , textContentRight= "";
 
 let finalContent;
-// display screen
+// selecting display screen
 const screen = document.querySelector("#latest");
 
-// screen.setAttribute("style", "min-width: 20px; background: yellow;");
 
-//flag to check if an operator has been entered or not
+// flag to check if an operator has been entered or not
+// flag needs to be false again after equate has been used
 let flag = false;
 let count = 0;
 let op = "";
+
+function displayAfterButton(){
+  // this function has to display
+}
 
 
 const resetState = (()=>{
@@ -31,12 +35,13 @@ addd.addEventListener("click", ()=>{
   op = "+";
   flag = true;
   count++;
-  if (count>1) {
-    alert("Enter a Number after an operator")
-    textContentLeft = textContentRight = "";
-  }else{ 
-    console.log(count) ;
-  }
+  // if (count>1) {
+  //   alert("Enter a Number after an operator")
+  //   textContentLeft = textContentRight = "";
+  // }else{ 
+  //   console.log(count) ;
+  // }
+  screen.textContent = textContentLeft;
   console.log("flag is true");
 });
 
@@ -47,12 +52,13 @@ minuss.addEventListener("click", ()=>{
   op="-";
   flag = true;
   count++;
-  if (count>1) {
-    alert("Enter a Number after an operator")
-    textContentLeft = textContentRight = "";
-  }else{ 
-    console.log(count) ;
-  }
+  // if (count>1) {
+  //   alert("Enter a Number after an operator")
+  //   textContentLeft = textContentRight = "";
+  // }else{ 
+  //   console.log(count) ;
+  // }
+  screen.textContent = textContentLeft;
   console.log("flag is true");
 });
 
@@ -63,12 +69,13 @@ multiplyy.addEventListener("click", ()=>{
   op="x";
   flag = true;
   count++;
-  if (count>1) {
-    alert("Enter a Number after an operator")
-    textContentLeft = textContentRight = "";
-  }else{ 
-    console.log(count) ;
-  }
+  // if (count>1) {
+  //   alert("Enter a Number after an operator")
+  //   textContentLeft = textContentRight = "";
+  // }else{ 
+  //   console.log(count) ;
+  // }
+  screen.textContent = textContentLeft;
   console.log("flag is true");
 });
 
@@ -78,12 +85,13 @@ dividee.addEventListener("click", ()=>{
   op="/";
   flag = true;
   count++;
-  if (count>1) {
-    alert("Enter a Number after an operator")
-    textContentLeft = textContentRight = "";
-  }else{ 
-    console.log(count) ;
-  }
+  // if (count>1) {
+  //   alert("Enter a Number after an operator")
+  //   textContentLeft = textContentRight = "";
+  // }else{ 
+  //   console.log(count) ;
+  // }
+  screen.textContent = textContentLeft;
   console.log("flag is true");
 });
 
@@ -93,6 +101,7 @@ equals.addEventListener("click", ()=>{
   operate(textContentLeft, textContentRight,op);
   screen.textContent = finalContent;
   flag = false;
+  textContentLeft = `${finalContent}`;
   textContentRight = "";
 });
 
