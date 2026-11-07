@@ -28,6 +28,7 @@ const clearrr = document.querySelector("#clear");
 clearrr.addEventListener("click", ()=>{
   textContentLeft = textContentRight = "";
   finalContent = 0;
+  screen.textContent = finalContent;
 })
 
 const addd = document.querySelector("#plus");
